@@ -4,8 +4,7 @@ import { redirect, useRouter } from "next/navigation";
 import signUp from "./auth/login";
 import { getAuth } from "firebase/auth";
 import { app, db } from "./firebase/config";
-import getDoument from "./firebase/getData";
-import { Firestore, doc, getDoc, getFirestore } from "firebase/firestore";
+import { doc, getDoc } from "firebase/firestore";
 import React from "react";
 import { useAuthContext } from "./auth/authContext";
 
