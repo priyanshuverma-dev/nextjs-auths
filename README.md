@@ -16,8 +16,8 @@ This repo contains implementation of Authentication in Nextjs using various back
 
 Contributors names and contact info
 
-ex. Antriksh Verma
-ex. [@antrikshverma](https://github.com/antrikshverma)
+Antriksh Verma
+[@antrikshverma](https://github.com/antrikshverma)
 
 ## Versions
 
