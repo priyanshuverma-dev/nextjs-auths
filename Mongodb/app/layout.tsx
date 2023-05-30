@@ -1,12 +1,13 @@
-import { AuthContextProvider } from "./auth/authContext";
+import ToasterContext from "@/context/ToasterContext";
 import "./globals.css";
 import { Inter } from "next/font/google";
+import AuthContext from "@/context/AuthContext";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Testing Firebase",
-  description: "Developing with Firebase",
+  title: "Try Mongodb",
+  description: "",
 };
 
 export default function RootLayout({
@@ -17,7 +18,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <AuthContextProvider>{children}</AuthContextProvider>
+        <ToasterContext />
+        <AuthContext>{children}</AuthContext>
       </body>
     </html>
   );
