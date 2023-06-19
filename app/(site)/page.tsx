@@ -13,7 +13,7 @@ import { toast } from "react-hot-toast";
 const Home = () => {
   const { user, logout } = useAuth();
   const router = useRouter();
-  const [input, setinput] = useState("");
+  
 
   useEffect(() => {
     if (!user) {
@@ -21,34 +21,8 @@ const Home = () => {
     }
   }, [user, router]);
 
-  const fetch = async () => {
-    const res = await databases.listDocuments(
-      server.databaseID,
-      server.tweetsCollection
-    );
-    console.log(res);
-  };
-
-  const createTweet = async () => {
-    if (input === null) return;
-    try {
-      const res = await databases.createDocument(
-        server.databaseID,
-        server.tweetsCollection,
-        ID.unique(),
-        {
-          text: input,
-          users: [`${user?.$id}`],
-        }
-      );
-      console.log(res);
-      toast.success(`Success to create`);
-      fetch();
-    } catch (err: any) {
-      toast.error(`${err.message}`);
-      console.log(err);
-    }
-  };
+ 
+  
 
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
@@ -57,19 +31,7 @@ const Home = () => {
           <p>Welcome, {user.name}</p>
           <button onClick={logout}>Logout</button>
           <div>
-            <input
-              className="border border-cyan-800 rounded"
-              type="text"
-              name="text"
-              id="text"
-              onChange={(e) => {
-                e.preventDefault();
-                setinput(e.target.value);
-                console.log(input);
-              }}
-            />
-            <Button onClick={createTweet}>Create tweete</Button>
-            {/* <button onClick={createTweet}>Create tweet</button> */}
+           {/* <button onClick={createTweet}>Create tweet</button> */}
           </div>
         </div>
       ) : (
