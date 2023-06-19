@@ -31,6 +31,6 @@ Priyanshu Verma
   - Secure Routes
   - User state
 - Appwrite
-- Basic Authentication
-- Secured Routes
-- User State
+  - Basic Authentication
+  - Secured Routes
+  - User State
