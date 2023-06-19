@@ -16,8 +16,8 @@ This repo contains implementation of Authentication in Nextjs using various back
 
 Contributors names and contact info
 
-Antriksh Verma
-[@antrikshverma](https://github.com/antrikshverma)
+Priyanshu Verma
+[@PriyanshuVerma](https://github.com/codebyps)
 
 ## Versions
 
@@ -26,3 +26,11 @@ Antriksh Verma
   - Google Authentication
   - User Specific Data
   - Firestore
+- Mongodb
+  - Basic Authentication
+  - Secure Routes
+  - User state
+- Appwrite
+- Basic Authentication
+- Secured Routes
+- User State
